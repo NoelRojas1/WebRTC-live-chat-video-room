@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--    font awesone-->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="src/style.css">
+    <title>WebRTC Chat Rooms</title>
+  </head>
+  <body>
+    <div id="videos">
+      <video class="video-player" id="user-1" autoplay playsinline></video>
+      <video class="video-player" id="user-2" autoplay playsinline></video>
+    </div>
+
+    <div id="controls">
+      <div class="control-container" id="camera-btn">
+        <i class="fa-solid fa-camera"></i>
+      </div>
+      <div class="control-container" id="mic-btn">
+        <i class="fa-solid fa-microphone"></i>
+      </div>
+
+      <a href="lobby">
+        <div class="control-container" id="leave-btn">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+      </a>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

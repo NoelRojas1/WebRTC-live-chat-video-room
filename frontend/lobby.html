@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/lobby.css">
+  <title>Chat Room Lobby</title>
+  <script src="/src/lobby.js" type="module" defer></script>
+</head>
+<body>
+  <main id="lobby-container">
+    <div id="form-container">
+      <div id="form__container-header">
+        <h1>Create or Join a Room</h1>
+      </div>
+
+      <div id="form__content-wrapper">
+        <form id="join-form">
+          <input type="text" name="invite_link" required />
+          <input type="submit" value="Join Room" />
+        </form>
+      </div>
+    </div>
+    <div id="available-rooms"></div>
+  </main>
+</body>
+</html>
